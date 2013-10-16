@@ -1,0 +1,806 @@
+{
+    "assets": [
+        {
+            "asset": "../media/audio/sound.caf", 
+            "target": "sound.caf"
+        }, 
+        {
+            "asset": "../media/graphics/1x/atlas.png", 
+            "target": "atlas.png"
+        }, 
+        {
+            "asset": "../media/graphics/1x/atlas.xml", 
+            "target": "atlas.xml"
+        }, 
+        {
+            "asset": "../media/graphics/2x/atlas@2x.png", 
+            "target": "atlas@2x.png"
+        }, 
+        {
+            "asset": "../media/graphics/2x/atlas@2x.xml", 
+            "target": "atlas@2x.xml"
+        }, 
+        {
+            "asset": "../media/graphics/1x/background.jpg", 
+            "target": "background.jpg"
+        }, 
+        {
+            "asset": "../media/graphics/2x/background@2x.jpg", 
+            "target": "background@2x.jpg"
+        }, 
+        {
+            "asset": "Default.png", 
+            "target": "Default.png"
+        }, 
+        {
+            "asset": "Default@2x.png", 
+            "target": "Default@2x.png"
+        }, 
+        {
+            "asset": "Default-568h@2x.png", 
+            "target": "Default-568h@2x.png"
+        }, 
+        {
+            "asset": "Default-Portrait~ipad.png", 
+            "target": "Default-Portrait~ipad.png"
+        }, 
+        {
+            "asset": "Default-Landscape~ipad.png", 
+            "target": "Default-Landscape~ipad.png"
+        }, 
+        {
+            "asset": "Icon.png", 
+            "target": "Icon.png"
+        }, 
+        {
+            "asset": "Icon~ipad.png", 
+            "target": "Icon~ipad.png"
+        }, 
+        {
+            "asset": "Icon@2x.png", 
+            "target": "Icon@2x.png"
+        }, 
+        {
+            "asset": "Icon@2x~ipad.png", 
+            "target": "Icon@2x~ipad.png"
+        }
+    ], 
+    "config": {
+        "APPLICATION_FULL_NAME": "AppScaffold", 
+        "APPLICATION_IDENTIFIER": "com.gamua.AppScaffold", 
+        "APPLICATION_NAME": "AppScaffold", 
+        "FEATURES": [
+            "portrait"
+        ], 
+        "LONG_VERSION": "1.0", 
+        "TEMPLATE_VALUES": {
+            "EXECUTABLE_NAME": "AppScaffold", 
+            "PRODUCT_NAME": "AppScaffold"
+        }
+    }, 
+    "defines": {
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 40300
+    }, 
+    "deps": [
+        "UIKit", 
+        "Foundation", 
+        "UIKit", 
+        "CoreGraphics", 
+        "OpenGLES", 
+        "QuartzCore", 
+        "AVFoundation", 
+        "AudioToolbox", 
+        "OpenAL"
+    ], 
+    "flags": [
+        "-fasm-blocks", 
+        {
+            "flag": "-std=c99", 
+            "not_type": "c++"
+        }, 
+        "-fno-asm", 
+        "-fpascal-strings", 
+        "-Wno-deprecated-declarations", 
+        "-Wreturn-type", 
+        "-Wswitch", 
+        "-Wparentheses", 
+        "-Wformat", 
+        "-Wunused-value", 
+        "-Wunused-variable", 
+        {
+            "flag": "-Winvalid-offsetof", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-Wprotocol", 
+            "type": "objc"
+        }
+    ], 
+    "header_paths": [
+        {
+            "header_path": "AppScaffold.hmap", 
+            "hmap": {
+                "App-Prefix.pch": {
+                    "key": "App-Prefix.pch", 
+                    "prefix": "./", 
+                    "suffix": "App-Prefix.pch"
+                }, 
+                "AppDelegate.h": {
+                    "key": "AppDelegate.h", 
+                    "prefix": "Classes/", 
+                    "suffix": "AppDelegate.h"
+                }, 
+                "Game.h": {
+                    "key": "Game.h", 
+                    "prefix": "Classes/", 
+                    "suffix": "Game.h"
+                }, 
+                "GameController.h": {
+                    "key": "GameController.h", 
+                    "prefix": "Classes/", 
+                    "suffix": "GameController.h"
+                }, 
+                "Media.h": {
+                    "key": "Media.h", 
+                    "prefix": "Classes/", 
+                    "suffix": "Media.h"
+                }, 
+                "SPALSound.h": {
+                    "key": "SPALSound.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPALSound.h"
+                }, 
+                "SPALSoundChannel.h": {
+                    "key": "SPALSoundChannel.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPALSoundChannel.h"
+                }, 
+                "SPAVSound.h": {
+                    "key": "SPAVSound.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPAVSound.h"
+                }, 
+                "SPAVSoundChannel.h": {
+                    "key": "SPAVSoundChannel.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPAVSoundChannel.h"
+                }, 
+                "SPAnimatable.h": {
+                    "key": "SPAnimatable.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPAnimatable.h"
+                }, 
+                "SPAudioEngine.h": {
+                    "key": "SPAudioEngine.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPAudioEngine.h"
+                }, 
+                "SPBitmapChar.h": {
+                    "key": "SPBitmapChar.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPBitmapChar.h"
+                }, 
+                "SPBitmapFont.h": {
+                    "key": "SPBitmapFont.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPBitmapFont.h"
+                }, 
+                "SPButton.h": {
+                    "key": "SPButton.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPButton.h"
+                }, 
+                "SPCompiledSprite.h": {
+                    "key": "SPCompiledSprite.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPCompiledSprite.h"
+                }, 
+                "SPDelayedInvocation.h": {
+                    "key": "SPDelayedInvocation.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPDelayedInvocation.h"
+                }, 
+                "SPDisplayObject.h": {
+                    "key": "SPDisplayObject.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPDisplayObject.h"
+                }, 
+                "SPDisplayObjectContainer.h": {
+                    "key": "SPDisplayObjectContainer.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPDisplayObjectContainer.h"
+                }, 
+                "SPDisplayObject_Internal.h": {
+                    "key": "SPDisplayObject_Internal.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPDisplayObject_Internal.h"
+                }, 
+                "SPEnterFrameEvent.h": {
+                    "key": "SPEnterFrameEvent.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPEnterFrameEvent.h"
+                }, 
+                "SPEvent.h": {
+                    "key": "SPEvent.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPEvent.h"
+                }, 
+                "SPEventDispatcher.h": {
+                    "key": "SPEventDispatcher.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPEventDispatcher.h"
+                }, 
+                "SPEvent_Internal.h": {
+                    "key": "SPEvent_Internal.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPEvent_Internal.h"
+                }, 
+                "SPGLTexture.h": {
+                    "key": "SPGLTexture.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPGLTexture.h"
+                }, 
+                "SPImage.h": {
+                    "key": "SPImage.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPImage.h"
+                }, 
+                "SPJuggler.h": {
+                    "key": "SPJuggler.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPJuggler.h"
+                }, 
+                "SPMacros.h": {
+                    "key": "SPMacros.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPMacros.h"
+                }, 
+                "SPMatrix.h": {
+                    "key": "SPMatrix.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPMatrix.h"
+                }, 
+                "SPMovieClip.h": {
+                    "key": "SPMovieClip.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPMovieClip.h"
+                }, 
+                "SPNSExtensions.h": {
+                    "key": "SPNSExtensions.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPNSExtensions.h"
+                }, 
+                "SPOverlayView.h": {
+                    "key": "SPOverlayView.h", 
+                    "prefix": "Classes/", 
+                    "suffix": "SPOverlayView.h"
+                }, 
+                "SPPoint.h": {
+                    "key": "SPPoint.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPPoint.h"
+                }, 
+                "SPPoolObject.h": {
+                    "key": "SPPoolObject.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPPoolObject.h"
+                }, 
+                "SPQuad.h": {
+                    "key": "SPQuad.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPQuad.h"
+                }, 
+                "SPRectangle.h": {
+                    "key": "SPRectangle.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPRectangle.h"
+                }, 
+                "SPRenderSupport.h": {
+                    "key": "SPRenderSupport.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPRenderSupport.h"
+                }, 
+                "SPRenderTexture.h": {
+                    "key": "SPRenderTexture.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPRenderTexture.h"
+                }, 
+                "SPResizeEvent.h": {
+                    "key": "SPResizeEvent.h", 
+                    "prefix": "Classes/", 
+                    "suffix": "SPResizeEvent.h"
+                }, 
+                "SPSound.h": {
+                    "key": "SPSound.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPSound.h"
+                }, 
+                "SPSoundChannel.h": {
+                    "key": "SPSoundChannel.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPSoundChannel.h"
+                }, 
+                "SPSprite.h": {
+                    "key": "SPSprite.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPSprite.h"
+                }, 
+                "SPStage.h": {
+                    "key": "SPStage.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPStage.h"
+                }, 
+                "SPStage_Internal.h": {
+                    "key": "SPStage_Internal.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPStage_Internal.h"
+                }, 
+                "SPSubTexture.h": {
+                    "key": "SPSubTexture.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPSubTexture.h"
+                }, 
+                "SPTextField.h": {
+                    "key": "SPTextField.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPTextField.h"
+                }, 
+                "SPTextField_Internal.h": {
+                    "key": "SPTextField_Internal.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPTextField_Internal.h"
+                }, 
+                "SPTexture.h": {
+                    "key": "SPTexture.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPTexture.h"
+                }, 
+                "SPTextureAtlas.h": {
+                    "key": "SPTextureAtlas.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPTextureAtlas.h"
+                }, 
+                "SPTouch.h": {
+                    "key": "SPTouch.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPTouch.h"
+                }, 
+                "SPTouchEvent.h": {
+                    "key": "SPTouchEvent.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPTouchEvent.h"
+                }, 
+                "SPTouchProcessor.h": {
+                    "key": "SPTouchProcessor.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPTouchProcessor.h"
+                }, 
+                "SPTouch_Internal.h": {
+                    "key": "SPTouch_Internal.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPTouch_Internal.h"
+                }, 
+                "SPTransitions.h": {
+                    "key": "SPTransitions.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPTransitions.h"
+                }, 
+                "SPTween.h": {
+                    "key": "SPTween.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPTween.h"
+                }, 
+                "SPTweenedProperty.h": {
+                    "key": "SPTweenedProperty.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPTweenedProperty.h"
+                }, 
+                "SPUtils.h": {
+                    "key": "SPUtils.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPUtils.h"
+                }, 
+                "SPView.h": {
+                    "key": "SPView.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "SPView.h"
+                }, 
+                "Sparrow.h": {
+                    "key": "Sparrow.h", 
+                    "prefix": "../../sparrow/Classes/", 
+                    "suffix": "Sparrow.h"
+                }, 
+                "ViewController.h": {
+                    "key": "ViewController.h", 
+                    "prefix": "Classes/", 
+                    "suffix": "ViewController.h"
+                }
+            }, 
+            "type": "I"
+        }
+    ], 
+    "infoplists": [
+        "./App-Info.plist"
+    ], 
+    "java_libs": [], 
+    "java_res_dirs": [], 
+    "java_sourcepaths": [], 
+    "java_sources": [], 
+    "libs": [
+        "z"
+    ], 
+    "link_flags": [], 
+    "modules": [], 
+    "pchs": [
+        "./App-Prefix.pch"
+    ], 
+    "sources": [
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPALSound.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPALSoundChannel.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPAVSound.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPAVSoundChannel.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPAudioEngine.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPBitmapChar.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPBitmapFont.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPButton.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPCompiledSprite.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPDelayedInvocation.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPDisplayObject.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPDisplayObjectContainer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPEnterFrameEvent.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPEvent.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPEventDispatcher.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPGLTexture.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPImage.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPJuggler.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPMatrix.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPMovieClip.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPNSExtensions.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPPoint.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPPoolObject.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPQuad.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPRectangle.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPRenderSupport.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPRenderTexture.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPRendering.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPSound.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPSoundChannel.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPSprite.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPStage.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPSubTexture.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPTextField.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPTexture.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPTextureAtlas.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPTouch.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPTouchEvent.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPTouchProcessor.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPTransitions.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPTween.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPTweenedProperty.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPUtils.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "../../sparrow/Classes/SPView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Classes/AppDelegate.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Classes/Game.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Classes/GameController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Classes/Media.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Classes/SPOverlayView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Classes/SPResizeEvent.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Classes/ViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "main.m"
+        }
+    ], 
+    "type": "app", 
+    "version": "1", 
+    "xcode_project": "AppScaffold.xcodeproj"
+}
