@@ -27,7 +27,7 @@
 @property (nonatomic, retain) NSTimer *timer;
 @property (nonatomic, retain) id displayLink;
 
-- (void)setup;
+- (void)setupSparrow;
 - (void)createFramebuffer;
 - (void)destroyFramebuffer;
 
@@ -52,7 +52,7 @@
 {    
     if (self = [super initWithFrame:frame]) 
     {
-        [self setup];
+        [self setupSparrow];
     }
     return self;
 }
@@ -66,7 +66,7 @@
     return self;
 }
 
-- (void)setup
+- (void)setupSparrow
 {
     if (mContext) return; // already initialized!
     
